@@ -1,19 +1,13 @@
-let title = "Project";
-let screens = "Простые, Сложные, Интерактивные";
-let screenPrice = 15000;
-let rollback = 50;
-let fullPrice = 15000;
-let adaptive = true;
+let num = 266219;
+let arr = num.toString().split("");
 
-console.log(title);
-console.log(fullPrice);
-console.log(adaptive);
+let result = arr.reduce(function(sum, current) {
+    return sum * current;
+});
 
-console.log(screens.length);
+console.log(result);
 
-console.log("Стоимость верстки экранов" + screenPrice + "рублей" + " " + "Стоимость разработки сайта" + fullPrice + "рублей");
+let obj = (result ** 3);
 
-console.log(screens.toLowerCase);
-console.log(screens.split(","));
-
-console.log((fullPrice * (rollback/100)));
+console.log(obj);
+console.log(obj.toString().substring(0, 2));
